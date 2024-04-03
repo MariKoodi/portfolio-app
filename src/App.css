@@ -1,38 +1,95 @@
-.App {
+body {
+  height: 100%;
+  background-color:#e3e3e3;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+h1, h2 {
+  color: #333 !important;
+}
+
+.about-me {
+  border: none;
+  background-color: #f8f8f8;
+}
+
+.icon {
+  color: #333333;
+  height: 2.5rem;
+  padding-right: 3rem;
+}
+
+.btn-custom {
+  width: 100%;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  background-color: #c5c5c5;
+  text-align: left;
+  border-radius: 0;
+  border-bottom: 1px solid #333333;
+  border-top: 1px solid #333333;
+}
+
+.btn-custom:hover {
+  background-color: #cfcfcf;
+  border-bottom: 1px solid #333333;
+  border-top: 1px solid #333333;
+}
+
+.card-header {
+  background-color: #9fbdff;
+}
+
+.card-body {
+  background-color: #f8f8f8;
+  height: 100%;
+}
+
+.card-footer {
+  background-color: #d4e1fd;
+}
+
+.link-btn {
+  display: block;
+  width: 70%;
+  color: #333;
+  background-color: #c5c5c5;
+  border: 1px solid #333333;
+  border-radius: 5px;
+  margin: auto;
+  padding: 0.4rem;
+  text-decoration: none;
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.link-btn:hover {
+  background-color: #87CEEB;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+@media only screen and (max-width: 995px) {
+  body {
+    font-size: smaller;
+  }
+  .icon {
+    height: 1.8rem;
+  }
+  .container {
+    max-width: 800px;
   }
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+@media only screen and (max-width: 767px) {
+  * {
+    text-align: center;
   }
-  to {
-    transform: rotate(360deg);
+  .container {
+    max-width: 70%;
+  }
+  .icons {
+    padding: 0 2em;
+    justify-content: space-around !important;
+  }
+  .icon {
+    padding-right: 0;
   }
 }
